@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    background-color: #07133C ;
+    height: 20vh;
+    align-items: flex-end;
+}
+.title{
+    color: yellow;
+    font-size: 7vh;
+    padding: 20px 0 12px 11px;
+}
+nav{
+    padding-left: 10px;
+}
+.nav-el{
+    color:azure;
+    font-size: 3vh;
+    padding-right:10px ;
+}
