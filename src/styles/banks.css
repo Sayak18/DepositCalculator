@@ -1,0 +1,35 @@
+.bank-container{
+    display:flex;
+    flex-direction: column;
+}
+.bank{
+    background-color:#6D7B6C;
+    width: 20vw;
+    height:7vh;
+    padding: 9px;
+    min-width:330px;
+    min-height: 35px;
+    margin:2px 0 0 0;
+}
+.bank-btn{
+    height:20px;
+    width:40px;
+    position:absolute;
+    left:22em;
+    background-color:#6D7B6C ;
+    border: none;
+}
+.bname{
+  color: white;
+  font-size:1.9em;
+  padding: 0 0 0 18px;
+}
+footer{
+    background-color:#07133C;
+    height:2vh;
+    width:20vw;
+    min-width:348.5px;
+}
+i{
+    cursor: pointer;
+}

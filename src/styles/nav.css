@@ -9,15 +9,15 @@
     align-items: flex-end;
 }
 .title{
-    color: yellow;
-    font-size: 7vh;
+    color: whitesmoke;
+    font-size: 10vh;
     padding: 20px 0 12px 11px;
 }
 nav{
     padding-left: 10px;
 }
 .nav-el{
-    color:azure;
+    color:rgb(117, 233, 233);
     font-size: 3vh;
     padding-right:10px ;
 }
