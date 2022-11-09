@@ -1,41 +1,23 @@
 import React from "react";
+import { useState } from "react";
 import '../styles/banks.css'
-export default function BankList(){
+export default function Bank(props){
+    const[popup,setPopup]=useState(false)
+    const deposits=(props.tod).map(item=>{
+        return(
+            <div className="deposit-el">{item}</div>
+        )
+    })
+    function handlePop(){
+     setPopup(prev=>!prev)
+    }
     return(
-        <div className="bank-container">
             <div className="bank">
-                <span className="bname">State Bank of India</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
+                <span className="bname">{props.name}</span>
+                <button className="bank-btn" onClick={handlePop}><i class="fa-solid fa-caret-down fa-3x"></i></button>
+                {popup && <div className="deposits">
+                {deposits}
+                </div>}
             </div>
-            <div className="bank">
-                <span className="bname">UCO Bank</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <div className="bank">
-                <span className="bname">Punjab National Bank</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <div className="bank">
-                <span className="bname">HDFC Bank</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <div className="bank">
-                <span className="bname">Bank of Baroda</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <div className="bank">
-                <span className="bname">Axis Bank</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <div className="bank">
-                <span className="bname">Post Office</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <div className="bank">
-                <span className="bname">ICICI Bank</span>
-                <button className="bank-btn"><i class="fa-solid fa-caret-down fa-3x"></i></button>
-            </div>
-            <footer></footer>
-        </div>
-    )
+        )
 }
