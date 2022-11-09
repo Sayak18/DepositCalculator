@@ -1,0 +1,30 @@
+.calculator{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    height:70vh;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    margin: 2em auto;
+    align-items: center;
+    border-radius: 11px;
+    background-color: #FFA88C;
+}
+.calculator-el{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-evenly;
+    width:70%;
+}
+.calculator-el input{
+    height:60%;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: grey;
+}
+.calculator-el input:focus{
+    outline:none;
+}

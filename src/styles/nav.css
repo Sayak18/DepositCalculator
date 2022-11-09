@@ -1,23 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     display: flex;
-    background-color: #07133C ;
+    background-color: #07133C;
+    width: 100vw;
     height: 20vh;
+    min-height: 7vh;
+    min-width: 660px;
     align-items: flex-end;
 }
-.title{
+
+.title {
     color: whitesmoke;
-    font-size: 10vh;
-    padding: 20px 0 12px 11px;
+    font-size: 4rem;
+    padding: 1rem 0 .7rem .7rem;
 }
-nav{
+
+nav {
     padding-left: 10px;
 }
-.nav-el{
-    color:rgb(117, 233, 233);
+
+.nav-el {
+    color: rgb(117, 233, 233);
     font-size: 3vh;
-    padding-right:10px ;
+    padding-right: 10px;
 }

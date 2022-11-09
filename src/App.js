@@ -1,12 +1,14 @@
 import React from 'react';
-import NavBar from './components/nav';
-import BankList from './components/banks';
-
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import Home from './components/home';
 function App() {
   return (
-    <div className="App">
-     <NavBar />
-     <BankList/>
+    <div className="app">
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+      </Routes>
+    </Router>
     </div>
   );
 }

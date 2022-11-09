@@ -1,35 +1,49 @@
 .bank-container{
-    display:flex;
+    display: flex;
     flex-direction: column;
+    width:20vw;
+    
+
 }
 .bank{
-    background-color:#6D7B6C;
-    width: 20vw;
-    height:7vh;
-    padding: 9px;
-    min-width:330px;
-    min-height: 35px;
-    margin:2px 0 0 0;
+    display: flex;
+    height:70px;
+    width:100%;
+    justify-content: space-evenly;
+    background-color: #6D7B6C;
+    margin-bottom: 0.2em;
+    color: white;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
 }
 .bank-btn{
-    height:20px;
-    width:40px;
-    position:absolute;
-    left:22em;
-    background-color:#6D7B6C ;
+    background-color: #6D7B6C;
     border: none;
-}
-.bname{
-  color: white;
-  font-size:1.9em;
-  padding: 0 0 0 18px;
-}
-footer{
-    background-color:#07133C;
-    height:2vh;
-    width:20vw;
-    min-width:348.5px;
-}
-i{
     cursor: pointer;
+}
+.foot{
+    width:20vw;
+    height:45px;
+    background-color:  #07133C;
+}
+.deposits{
+    position: absolute;
+    background-color: #D9D9D9;
+    color:black;
+    font-size: 1rem;
+    top:70px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:233px;
+    z-index: 1000;
+    justify-content: space-evenly;
+}
+.deposit-el{
+    height:60px;
+    padding-left: 2em;
+    border-bottom: 1px dashed #000000 ;
 }
