@@ -28,3 +28,27 @@
 .calculator-el input:focus{
     outline:none;
 }
+.result-btn{
+    height: 30px;
+    width: 60px;
+    color: white;
+    background-color: slategray;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+@media screen  and (max-width:794px) {
+    .calculator{
+        width: 80%;
+        margin: 0 auto;
+        height: 80%;
+    }
+    .calculator-el{
+        height: 30%;
+    }
+    .calculator-el input{
+        height: 40%;
+    }
+}

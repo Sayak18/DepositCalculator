@@ -9,13 +9,13 @@
     width: 100vw;
     height: 20vh;
     min-height: 7vh;
-    min-width: 660px;
+    /* min-width: 660px; */
     align-items: flex-end;
 }
 
 .title {
     color: whitesmoke;
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 0.8750rem + 4.0000vw, 4rem);
     padding: 1rem 0 .7rem .7rem;
 }
 
@@ -25,6 +25,15 @@ nav {
 
 .nav-el {
     color: rgb(117, 233, 233);
-    font-size: 3vh;
+    font-size: 2rem;
     padding-right: 10px;
+}
+@media screen and (max-width:794px){
+    .container{
+        min-width: none;
+        height: 10vh;
+    }
+    .nav-el{
+        font-size: 1rem;
+    }
 }

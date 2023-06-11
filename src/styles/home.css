@@ -1,7 +1,16 @@
-body {
-    overflow-x: hidden;
-}
-
 .body {
     display: flex;
+    overflow-x: hidden;
+}
+@media screen and (max-width:794px){
+    .body{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        justify-content: space-between;
+    }
+    .home{
+        width: 100vw;
+    }
 }

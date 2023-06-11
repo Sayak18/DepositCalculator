@@ -1,14 +1,16 @@
-import react from "react"
+// import react from "react"
 import NavBar from './nav';
 import Calc from "./calc";
 import"../styles/home.css";
 import Bank from "./banks";
 import db from "./firebase";
 import { getDoc,doc } from "firebase/firestore";
-import { useEffect,useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useState } from "react";
+import { BankContext } from '../context/bankcontext';
 export default function Home(){
 const[data,setData]=useState()
+const[popup,setPopup]=useState(new Array(8).fill(false))
 useLayoutEffect(()=>{
     async function getBanks(){
     const docSnap = await getDoc(doc(db, "bankdata/banks"));
@@ -22,15 +24,19 @@ useLayoutEffect(()=>{
     }
     getBanks() 
 },[])
-const banks=data?.map(item=>{
+const banks=data?.map((item,i)=>{
     return(
         <Bank
         {...item} 
+        popup={popup}
+        Popupfunc={setPopup}
+        index={i}
          />
     )
 })
     return(
         <div className="home"> 
+        <BankContext.Provider value={{popup,setPopup}}>
         <NavBar/>
         <div className="body">
         <div className="bank-container">
@@ -39,6 +45,7 @@ const banks=data?.map(item=>{
         </div>
         <Calc/>
         </div>
+        </BankContext.Provider>
         </div>
     )
 }

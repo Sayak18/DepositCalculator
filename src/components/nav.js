@@ -5,7 +5,7 @@ export default function NavBar(){
     return(
       <div className="container">
         <header>
-          <h1 className="title">Savings.com</h1>
+          <h1 className="title">e^Money</h1>
           <nav>  
             <Link className="nav-el" to="/" >Home</Link>
             <Link className="nav-el" to="/about">About</Link>
